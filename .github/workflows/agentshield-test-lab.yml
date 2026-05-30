@@ -13,3 +13,7 @@ jobs:
         run: |
           test -f README.md
           echo "AgentShield test lab validation passed"
+      - name: Validate staging secret injection
+        env:
+          AGENTSHIELD_STAGING_MARKER: ${{ secrets.AGENTSHIELD_STAGING_MARKER }}
+        run: test -n "$AGENTSHIELD_STAGING_MARKER"
