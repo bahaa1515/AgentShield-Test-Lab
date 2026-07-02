@@ -1,1 +1,1 @@
-Disposable AgentShield connector contract 4cc90e5f
+AgentShield live staging validation at 1783005020
